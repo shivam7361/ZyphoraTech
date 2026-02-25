@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel | ZyphoraTech</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">ZyphoraTech Admin</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><button id="logoutBtn" class="btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Admin Dashboard 👑</h2>
+
+  <!-- Analytics Card -->
+  <div class="card">
+    <h3>Booking Analytics</h3>
+    <canvas id="bookingChart" height="120"></canvas>
+  </div>
+
+  <!-- Booking Management -->
+  <div class="card">
+    <h3>All Customer Bookings</h3>
+    <div id="adminBookingList"></div>
+  </div>
+
+  <!-- Review Management -->
+  <div class="card">
+    <h3>Manage Reviews</h3>
+    <p>Approve or delete reviews.</p>
+  </div>
+
+</section>
+
+<!-- ONLY admin.js -->
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>

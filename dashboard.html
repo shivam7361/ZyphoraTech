@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | ZyphoraTech</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2><a href="index.html" class="logo-link">ZyphoraTech</a></h2>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="#">📦 My Bookings</a></li>
+      <li><a href="#">👤 Profile</a></li>
+      <li><button id="logoutBtn" class="btn">Logout</button></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="content-wrapper">
+
+    <div class="top-navbar">
+        <div class="breadcrumb">
+          Home / Dashboard
+        </div>
+      
+        <div class="nav-right">
+          <div class="notification">
+            🔔 <span id="notifCount">0</span>
+          </div>
+      
+          <div class="profile-menu">
+            <div class="profile-icon">👤</div>
+            <div class="dropdown">
+              <a href="#">My Profile</a>
+              <a href="index.html">Visit Website</a>
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
+      
+          <button id="themeToggle" class="btn">🌙</button>
+        </div>
+      </div>
+
+    <main class="main-content">
+      <h2>Customer Dashboard</h2>
+
+      <form id="bookingForm" class="booking-form">
+        <select id="serviceType" required>
+          <option value="">Select Service</option>
+          <option value="Website Development">Website Development</option>
+          <option value="App Development">App Development</option>
+          <option value="SEO & Marketing">SEO & Marketing</option>
+        </select>
+
+        <textarea id="projectDetails" placeholder="Describe your project..." required></textarea>
+
+        <button type="submit" class="btn-primary">Submit Booking</button>
+      </form>
+
+      <div id="bookingList" class="booking-list"></div>
+    </main>
+
+  </div>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
