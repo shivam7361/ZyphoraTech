@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>ZyphoraTech | Web & IT Solutions</title>
+  <meta name="description" content="ZyphoraTech provides modern website development, app development and IT solutions.">
+  <meta name="keywords" content="web development, app development, IT services, software company">
+  <meta name="author" content="ZyphoraTech">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("P-cpW8QfAtKobpMfw"); // Replace with EmailJS public key
+    })();
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="aurora-bg"></div>
+  <div id="tsparticles"></div>
+  <div class="global-stars"></div>
+
+<header class="glass-header">
+  <nav class="navbar">
+    <div class="logo-container">
+      <span class="logo-icon">&lt;Z/&gt;</span>
+      <h1 class="logo-text">Zyphora<span class="brand-tech">Tech</span></h1>
+    </div>
+    <div class ="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <!-- Dynamic Area -->
+  <li id="loginNav"><a href="login.html" class="btn">Login</a></li>
+  <li id="registerNav"><a href="register.html" class="btn-primary">Register</a></li>
+
+  <li id="dashboardNav" style="display:none;">
+    <a href="dashboard.html" class="btn">Dashboard</a>
+  </li>
+
+  <li id="adminNav" style="display:none;">
+    <a href="admin.html" class="btn">Admin Panel</a>
+  </li>
+
+  <li id="profileNav" style="display:none;">
+    <a href="#" class="btn">👤 Profile</a>
+  </li>
+
+  <li id="logoutNav" style="display:none;">
+    <button id="logoutBtn" class="btn">Logout</button>
+  </li>
+</ul>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+    <h1 class="hero-title">Zyphora<span class="brand-tech">Tech</span></h1>
+
+    <h2 class="tagline">
+      Precision in Every Pixel<br>
+      Power in Every Line
+    </h2>
+
+    <p class="hero-sub">
+      Engineering intelligent digital ecosystems for modern enterprises.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  </section>
+
+  <section id="about" class="section premium-about">
+
+    <div class="about-glow"></div>
+  
+    <div class="about-container">
+      
+      <div class="about-left">
+        <h2>About Us</h2>
+        
+        <p>
+          ZyphoraTech delivers intelligent digital ecosystems — from enterprise ERP
+          systems to IoT automation and scalable cloud platforms.
+        </p>
+        <p>
+          We blend engineering precision with creative design to build powerful,
+          future-ready digital solutions.
+        </p>
+      </div>
+  
+      <div class="about-right">
+        <div class="about-card">
+          <h3 class="counter" data-target="50">0</h3>
+          <p>Projects Delivered</p>
+        </div>
+  
+        <div class="about-card">
+          <h3 class="counter" data-target="30">0</h3>
+          <p>Happy Clients</p>
+        </div>
+  
+        <div class="about-card">
+          <h3 class="counter percent" data-target="99">0</h3>
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+
+  <div class="marquee">
+    <div class="marquee-content">
+
+      <div class="service-card"><i class="fas fa-briefcase"></i> Corporate & <br>Organization Websites</div>
+<div class="service-card"><i class="fas fa-code"></i> Web Applications</div>
+<div class="service-card"><i class="fas fa-graduation-cap"></i> School ERP System</div>
+<div class="service-card"><i class="fas fa-microchip"></i> IoT Automation</div>
+<div class="service-card"><i class="fas fa-shopping-cart"></i> E-Commerce Solutions</div>
+<div class="service-card"><i class="fas fa-cloud"></i> Cloud Hosting</div>
+<div class="service-card"><i class="fas fa-database"></i> Database Management</div>
+<div class="service-card"><i class="fas fa-plug"></i> API Development</div>
+<div class="service-card"><i class="fas fa-vector-square"></i> UI/UX Design</div>
+<div class="service-card"><i class="fas fa-bullhorn"></i> Digital Branding</div>
+
+<div class="service-card"><i class="fas fa-briefcase"></i> Corporate & <br>Organization Websites</div>
+<div class="service-card"><i class="fas fa-code"></i> Web Applications</div>
+<div class="service-card"><i class="fas fa-graduation-cap"></i> School ERP System</div>
+<div class="service-card"><i class="fas fa-microchip"></i> IoT Automation</div>
+<div class="service-card"><i class="fas fa-shopping-cart"></i> E-Commerce Solutions</div>
+<div class="service-card"><i class="fas fa-cloud"></i> Cloud Hosting</div>
+<div class="service-card"><i class="fas fa-database"></i> Database Management</div>
+<div class="service-card"><i class="fas fa-plug"></i> API Development</div>
+<div class="service-card"><i class="fas fa-vector-square"></i> UI/UX Design</div>
+<div class="service-card"><i class="fas fa-bullhorn"></i> Digital Branding</div>
+
+    </div>
+  </div>
+  <section id="techstack" class="section">
+    <h2>Our Tech Stack</h2>
+  
+    <div class="marquee">
+      <div class="marquee-content">
+  
+        <!-- FRONTEND -->
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <span>HTML5</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+          <span>CSS3</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <span>JavaScript</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+          <span>React</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+          <span>Node.js</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+          <span>Firebase</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+          <span>MongoDB</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+          <span>Docker</span>
+        </div>
+  
+        <!-- Duplicate for infinite -->
+        <!-- Copy same cards again -->
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <span>HTML5</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+          <span>CSS3</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <span>JavaScript</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+          <span>React</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+          <span>Node.js</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+          <span>Firebase</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+          <span>MongoDB</span>
+        </div>
+  
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+          <span>Docker</span>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section premium-contact">
+
+    <div class="contact-glow"></div>
+  
+    <div class="contact-wrapper">
+  
+      <div class="contact-info">
+        <h2>Let’s Build Something Powerful 🚀</h2>
+        <p>
+          Have a project in mind? Let’s turn your vision into reality.
+        </p>
+
+        
+      </div>
+  
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Tell us about your project..." required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+  
+    </div>
+  
+  </section>
+
+  <footer class="premium-footer">
+    <div class="footer-container">
+  
+      <div>
+        <h3>ZyphoraTech</h3>
+        <p>Precision in Every Pixel.<br>Power in Every Line.</p>
+      </div>
+  
+      <div>
+        <h4>Services</h4>
+        <p>Web Development</p>
+        <p>Cloud Hosting</p>
+        <p>ERP Systems</p>
+      </div>
+  
+      <div>
+        <h4>Company</h4>
+        <p>About</p>
+        <p>Projects</p>
+        <p>Careers</p>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Connect</h4>
+      
+        <div class="social-icons">
+          <a href="mailto:info@zyphoratech.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+      
+          <a href="https://t.me/YOUR_USERNAME" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+      
+          <a href="https://instagram.com/YOUR_USERNAME" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+      
+          <a href="https://facebook.com/YOUR_PAGE" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      © 2026 ZyphoraTech. All rights reserved.
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("tsparticles", {
+  particles: {
+    number: { value: 40 },
+    size: { value: 2 },
+    move: { speed: 1 },
+    opacity: { value: 0.5 }
+  }
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="app.js"></script>
+<a href="https://t.me/YOUR_USERNAME" class="telegram-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+</a>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="navbar.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
